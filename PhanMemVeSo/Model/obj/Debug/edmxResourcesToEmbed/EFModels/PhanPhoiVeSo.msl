@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PhanPhoiVeSoModelStoreContainer" CdmEntityContainer="PhanPhoiVeSoEntities">
+    <EntitySetMapping Name="DaiLies">
+      <EntityTypeMapping TypeName="PhanPhoiVeSoModel.DaiLy">
+        <MappingFragment StoreEntitySet="DaiLy">
+          <ScalarProperty Name="DaiLyId" ColumnName="DaiLyId" />
+          <ScalarProperty Name="TenDaiLy" ColumnName="TenDaiLy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiVeSoes">
+      <EntityTypeMapping TypeName="PhanPhoiVeSoModel.LoaiVeSo">
+        <MappingFragment StoreEntitySet="LoaiVeSo">
+          <ScalarProperty Name="LoaiVeSoId" ColumnName="LoaiVeSoId" />
+          <ScalarProperty Name="TenTinh" ColumnName="TenTinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhieuDangKies">
+      <EntityTypeMapping TypeName="PhanPhoiVeSoModel.PhieuDangKy">
+        <MappingFragment StoreEntitySet="PhieuDangKy">
+          <ScalarProperty Name="PhieuDangKyId" ColumnName="PhieuDangKyId" />
+          <ScalarProperty Name="DaiLyId" ColumnName="DaiLyId" />
+          <ScalarProperty Name="NgayDangKy" ColumnName="NgayDangKy" />
+          <ScalarProperty Name="SLDangKy" ColumnName="SLDangKy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhieuPhatHanhs">
+      <EntityTypeMapping TypeName="PhanPhoiVeSoModel.PhieuPhatHanh">
+        <MappingFragment StoreEntitySet="PhieuPhatHanh">
+          <ScalarProperty Name="DaiLyId" ColumnName="DaiLyId" />
+          <ScalarProperty Name="LoaiVeSoId" ColumnName="LoaiVeSoId" />
+          <ScalarProperty Name="NgayPhat" ColumnName="NgayPhat" />
+          <ScalarProperty Name="SLPhat" ColumnName="SLPhat" />
+          <ScalarProperty Name="SLBanDuoc" ColumnName="SLBanDuoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

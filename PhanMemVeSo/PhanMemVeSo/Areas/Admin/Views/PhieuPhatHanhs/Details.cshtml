@@ -1,0 +1,43 @@
+﻿@model Model.EFModels.PhieuPhatHanh
+
+@{
+    ViewBag.Title = "Details";
+    Layout = null;
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PhieuPhatHanh</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SLBanDuoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLBanDuoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DaiLy.TenDaiLy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DaiLy.TenDaiLy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoaiVeSo.TenTinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiVeSo.TenTinh)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

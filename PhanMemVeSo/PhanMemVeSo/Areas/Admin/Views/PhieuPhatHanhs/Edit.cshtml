@@ -1,0 +1,44 @@
+﻿@model Model.EFModels.PhieuPhatHanh
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = null;
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>PhieuPhatHanh</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.DaiLyId)
+
+        @Html.HiddenFor(model => model.LoaiVeSoId)
+
+        @Html.HiddenFor(model => model.NgayPhat)
+
+        @Html.HiddenFor(model => model.SLPhat)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SLBanDuoc, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SLBanDuoc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SLBanDuoc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7b519fc2dc944f26a2042649f96b7e72" Name="Diagram1">
+        <EntityTypeShape EntityType="PhanPhoiVeSoModel.DaiLy" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanPhoiVeSoModel.LoaiVeSo" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanPhoiVeSoModel.PhieuDangKy" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhanPhoiVeSoModel.PhieuPhatHanh" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PhanPhoiVeSoModel.FK__PhieuDang__DaiLy__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanPhoiVeSoModel.FK__PhieuPhat__DaiLy__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="PhanPhoiVeSoModel.FK__PhieuPhat__LoaiV__3E52440B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
